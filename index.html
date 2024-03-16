@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #F5F4F6;
+        }
+
+        .container {
+            margin: 50px;
+            width: 240px;
+            height: 270px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px;
+        }
+
+        .container:hover {
+            box-shadow: none;
+        }
+
+        .first {
+            width: 100%;
+            background-color: #4071ED;
+            height: 30%;
+            border-radius: 10px 10px 0px 0px;
+
+        }
+
+        .first img {
+            width: 90px;
+            height: 90px;
+            background-color: #4071ED;
+            position: relative;
+            border-radius: 50px;
+            top: 10px;
+            left: 76px;
+            border: 2pxpx solid white;
+            outline: 2px solid #4071ED;
+        }
+
+        .second {
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+
+        .second h3 {
+            margin-top: 25px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .second p {
+            font-size: 2vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .social_media ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            position: relative;
+            left: 31px;
+        }
+
+        .social_media ul li {
+            width: 20px;
+            height: 20px;
+           
+        }
+
+
+
+        .social_media ul li a {
+            text-decoration: none;
+
+        }
+        .social_media ul li:hover{
+            animation-name: anim;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes anim {
+            from {}
+
+            to {
+                scale: 1.5;
+            }
+        }
+
+        #facebook img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+
+        #twitter img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+
+        #instagram img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+
+        #youtube img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+
+
+        .btn button {
+            border: none;
+            box-shadow: 2px 2px 1px rgb(231, 226, 226);
+            background-color: #4071ED;
+            color: white;
+            font-size: 10px;
+            padding: 7px 12px;
+            border-radius: 10px;
+        }
+
+        .btn button:hover {
+            box-shadow: none;
+        }
+
+        .btn {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .likes ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .likes ul li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .like {
+            background-image: url(/heart.png);
+            background-size: cover;
+        }
+
+        .comment {
+            background-image: url(/comment.png);
+            background-size: cover;
+        }
+
+        .share {
+            background-image: url(/share.png);
+            background-size: cover;
+        }
+
+        .media {
+            width: 13px;
+            height: 13px;
+
+        }
+
+        .line {
+            width: 1.5px;
+            height: 12px;
+            background-color: rgba(63, 61, 61, 0.445);
+        }
+
+        .flex {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="container">
+            <div class="first"><img src="/dp.jpg" alt="">
+            </div>
+            <div class="second">
+                <h3>Md Amshar</h3>
+                <p>Web Developer & Graphic Designer</p>
+                <div class="social_media">
+                    <ul>
+                        <li id="facebook"><a href="https://www.facebook.com/mdamshar.0541/"><img src="/facebook.png"
+                                    alt=""></a></li>
+                        <li id="twitter"><a href="https://www.x.com.md_amshar"><img src="/twitter.png" alt=""></a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/amsharbinsufyan"><img src="/instagram.png"
+                                    alt=""></a></li>
+                        <li id="youtube"><a href="https://www.youtube.com/@amsharcreation3447"><img src="/youtube.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>Subscribe</button>
+                    <button>Message</button>
+                </div>
+
+                <div class="likes">
+                    <ul>
+                        <li>
+                            <div class="like media"></div><span>60k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="comment media"></div><span>20k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="share media"></div><span>12k</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="first"><img src="/dp.jpg" alt="">
+            </div>
+            <div class="second">
+                <h3>Md Amshar</h3>
+                <p>Web Developer & Graphic Designer</p>
+                <div class="social_media">
+                    <ul>
+                        <li id="facebook"><a href="https://www.facebook.com/mdamshar.0541/"><img src="/facebook.png"
+                                    alt=""></a></li>
+                        <li id="twitter"><a href="https://www.x.com.md_amshar"><img src="/twitter.png" alt=""></a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/amsharbinsufyan"><img src="/instagram.png"
+                                    alt=""></a></li>
+                        <li id="youtube"><a href="https://www.youtube.com/@amsharcreation3447"><img src="/youtube.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>Subscribe</button>
+                    <button>Message</button>
+                </div>
+
+                <div class="likes">
+                    <ul>
+                        <li>
+                            <div class="like media"></div><span>60k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="comment media"></div><span>20k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="share media"></div><span>12k</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="first"><img src="/dp.jpg" alt="">
+            </div>
+            <div class="second">
+                <h3>Md Amshar</h3>
+                <p>Web Developer & Graphic Designer</p>
+                <div class="social_media">
+                    <ul>
+                        <li id="facebook"><a href="https://www.facebook.com/mdamshar.0541/"><img src="/facebook.png"
+                                    alt=""></a></li>
+                        <li id="twitter"><a href="https://www.x.com.md_amshar"><img src="/twitter.png" alt=""></a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/amsharbinsufyan"><img src="/instagram.png"
+                                    alt=""></a></li>
+                        <li id="youtube"><a href="https://www.youtube.com/@amsharcreation3447"><img src="/youtube.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>Subscribe</button>
+                    <button>Message</button>
+                </div>
+
+                <div class="likes">
+                    <ul>
+                        <li>
+                            <div class="like media"></div><span>60k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="comment media"></div><span>20k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="share media"></div><span>12k</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="first"><img src="/dp.jpg" alt="">
+            </div>
+            <div class="second">
+                <h3>Md Amshar</h3>
+                <p>Web Developer & Graphic Designer</p>
+                <div class="social_media">
+                    <ul>
+                        <li id="facebook"><a href="https://www.facebook.com/mdamshar.0541/"><img src="/facebook.png"
+                                    alt=""></a></li>
+                        <li id="twitter"><a href="https://www.x.com.md_amshar"><img src="/twitter.png" alt=""></a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/amsharbinsufyan"><img src="/instagram.png"
+                                    alt=""></a></li>
+                        <li id="youtube"><a href="https://www.youtube.com/@amsharcreation3447"><img src="/youtube.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>Subscribe</button>
+                    <button>Message</button>
+                </div>
+
+                <div class="likes">
+                    <ul>
+                        <li>
+                            <div class="like media"></div><span>60k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="comment media"></div><span>20k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="share media"></div><span>12k</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="first"><img src="/dp.jpg" alt="">
+            </div>
+            <div class="second">
+                <h3>Md Amshar</h3>
+                <p>Web Developer & Graphic Designer</p>
+                <div class="social_media">
+                    <ul>
+                        <li id="facebook"><a href="https://www.facebook.com/mdamshar.0541/"><img src="/facebook.png"
+                                    alt=""></a></li>
+                        <li id="twitter"><a href="https://www.x.com.md_amshar"><img src="/twitter.png" alt=""></a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/amsharbinsufyan"><img src="/instagram.png"
+                                    alt=""></a></li>
+                        <li id="youtube"><a href="https://www.youtube.com/@amsharcreation3447"><img src="/youtube.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>Subscribe</button>
+                    <button>Message</button>
+                </div>
+
+                <div class="likes">
+                    <ul>
+                        <li>
+                            <div class="like media"></div><span>60k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="comment media"></div><span>20k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="share media"></div><span>12k</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="first"><img src="/dp.jpg" alt="">
+            </div>
+            <div class="second">
+                <h3>Md Amshar</h3>
+                <p>Web Developer & Graphic Designer</p>
+                <div class="social_media">
+                    <ul>
+                        <li id="facebook"><a href="https://www.facebook.com/mdamshar.0541/"><img src="/facebook.png"
+                                    alt=""></a></li>
+                        <li id="twitter"><a href="https://www.x.com.md_amshar"><img src="/twitter.png" alt=""></a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/amsharbinsufyan"><img src="/instagram.png"
+                                    alt=""></a></li>
+                        <li id="youtube"><a href="https://www.youtube.com/@amsharcreation3447"><img src="/youtube.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>Subscribe</button>
+                    <button>Message</button>
+                </div>
+
+                <div class="likes">
+                    <ul>
+                        <li>
+                            <div class="like media"></div><span>60k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="comment media"></div><span>20k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="share media"></div><span>12k</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="first"><img src="/dp.jpg" alt="">
+            </div>
+            <div class="second">
+                <h3>Md Amshar</h3>
+                <p>Web Developer & Graphic Designer</p>
+                <div class="social_media">
+                    <ul>
+                        <li id="facebook"><a href="https://www.facebook.com/mdamshar.0541/"><img src="/facebook.png"
+                                    alt=""></a></li>
+                        <li id="twitter"><a href="https://www.x.com.md_amshar"><img src="/twitter.png" alt=""></a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/amsharbinsufyan"><img src="/instagram.png"
+                                    alt=""></a></li>
+                        <li id="youtube"><a href="https://www.youtube.com/@amsharcreation3447"><img src="/youtube.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>Subscribe</button>
+                    <button>Message</button>
+                </div>
+
+                <div class="likes">
+                    <ul>
+                        <li>
+                            <div class="like media"></div><span>60k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="comment media"></div><span>20k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="share media"></div><span>12k</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="first"><img src="/dp.jpg" alt="">
+            </div>
+            <div class="second">
+                <h3>Md Amshar</h3>
+                <p>Web Developer & Graphic Designer</p>
+                <div class="social_media">
+                    <ul>
+                        <li id="facebook"><a href="https://www.facebook.com/mdamshar.0541/"><img src="/facebook.png"
+                                    alt=""></a></li>
+                        <li id="twitter"><a href="https://www.x.com.md_amshar"><img src="/twitter.png" alt=""></a></li>
+                        <li id="instagram"><a href="https://www.instagram.com/amsharbinsufyan"><img src="/instagram.png"
+                                    alt=""></a></li>
+                        <li id="youtube"><a href="https://www.youtube.com/@amsharcreation3447"><img src="/youtube.png"
+                                    alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>Subscribe</button>
+                    <button>Message</button>
+                </div>
+
+                <div class="likes">
+                    <ul>
+                        <li>
+                            <div class="like media"></div><span>60k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="comment media"></div><span>20k</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="share media"></div><span>12k</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
