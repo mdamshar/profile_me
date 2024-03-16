@@ -10,6 +10,10 @@
             background-color: #F5F4F6;
         }
 
+        :root{
+            --bg:#5d5549;
+        }
+
         .container {
             margin: 50px;
             width: 240px;
@@ -25,7 +29,7 @@
 
         .first {
             width: 100%;
-            background-color: #4071ED;
+            background-color: var(--bg);
             height: 30%;
             border-radius: 10px 10px 0px 0px;
 
@@ -34,14 +38,13 @@
         .first img {
             width: 90px;
             height: 90px;
-            background-color: #4071ED;
+            background-color: var(--bg);
             position: relative;
             border-radius: 50px;
             top: 10px;
             left: 76px;
-            border: 2pxpx solid white;
-            outline: 2px solid #4071ED;
-        }
+            border: 2px solid white;
+            outline: 2px solid var(--bg);      }
 
         .second {
             display: flex;
@@ -56,7 +59,7 @@
         }
 
         .second p {
-            font-size: 2vh;
+            font-size: 10px;
             margin: 0;
             text-align: center;
         }
@@ -75,8 +78,6 @@
            
         }
 
-
-
         .social_media ul li a {
             text-decoration: none;
 
@@ -84,7 +85,7 @@
         .social_media ul li:hover{
             animation-name: anim;
             animation-duration: 0.5s;
-            animation-timing-function: ease-in-out;
+            animation-timing-function: ease;
             animation-fill-mode: forwards;
         }
 
@@ -123,16 +124,19 @@
 
         .btn button {
             border: none;
-            box-shadow: 2px 2px 1px rgb(231, 226, 226);
-            background-color: #4071ED;
+            background-color:var(--bg);
             color: white;
             font-size: 10px;
             padding: 7px 12px;
             border-radius: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .btn button:hover {
             box-shadow: none;
+            background-color: white;
+            color: var(--bg);
+         
         }
 
         .btn {
